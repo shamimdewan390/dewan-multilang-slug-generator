@@ -1,7 +1,5 @@
 # dewan-multilang-slug-generator
 
-# README
-
 here is doc
 
 
