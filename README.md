@@ -55,23 +55,21 @@ MultilangSlug::makeSlug(Team::class, 'Team title', 'team_slug');
 MultilangSlug::makeSlug(Team::class, 'Team title', 'team_slug');
 // Output: team-title-2
 ```
-
-### Example #02 - Pass custom separator
-
-Let's assume separator is `''` empty.
-
+### Example-1 - Unique slug for Post or any model easily
 ```php
-// First time create user.
-MultilangSlug::makeSlug(User::class, 'akash', 'username', ''); // akash
-
-// Second time create user.
-MultilangSlug::makeSlug(User::class, 'akash', 'username', ''); // akash1
-
-// Third time create user.
-MultilangSlug::makeSlug(User::class, 'akash', 'username', ''); // akash2
+public function store(array $data): Team|null
+{
+    $title = "here is title";
+    $data = Team::create([
+        "title" => $title,
+        'slug' => MultilangSlug::makeSlug(Team::class, $title),
+    ]);
+    return $data;
+}
 ```
 
-### Example - Unique slug for Post or any model easily
+
+### Example-2 - Unique slug for Post or any model easily
 ```php
 public function create(array $data): Post|null
 {
