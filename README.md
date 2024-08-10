@@ -55,7 +55,7 @@ MultilangSlug::makeSlug(Team::class, 'Team title', 'team_slug');
 MultilangSlug::makeSlug(Team::class, 'Team title', 'team_slug');
 // Output: team-title-2
 ```
-### Example-1 - Unique slug for Post or any model easily
+### Example-1 - Unique slug for Team or any model easily
 ```php
 public function store(array $data): Team|null
 {
@@ -100,7 +100,7 @@ MultilangSlug::makeSlug($model, $slugText, $field, $divider);
  * @return string
  * @throws \Exception
  */
-public function generate(
+public function makeSlug(
     $model,
     $slugText,
     $field,
