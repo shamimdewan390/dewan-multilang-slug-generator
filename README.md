@@ -1,0 +1,1 @@
+# dewan-multilang-slug-generator
