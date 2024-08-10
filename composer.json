@@ -1,7 +1,12 @@
 {
-    "name": "shamim/dewan-multilang-slug",
+    "name": "dewan/dewan-multilang-slug",
     "description": "It takes a string, a model,  a filed, and a divider, and returns a unique string with a number or random string appended to it if the slug already exists in the database.",
-    "type": "composer-plugin",
+    "keywords": [
+        "Shamim Dewan",
+        "laravel",
+        "dewan-sql-seeder"
+    ],
+    "homepage": "https://github.com/shamimdewan390/dewan-multilang-slug-generator",
     "license": "MIT",
     "autoload": {
         "psr-4": {
