@@ -10,13 +10,13 @@ here is doc
 > Run this command for install package.
 
 ```bash
-composer require dewan/dewan-sql-seeder
+composer require dewan/dewan-multilang-slug
 ```
 
 > Run this command for config publish.
 
 ```bash
-php artisan vendor:publish --tag=dewan-sql-seeder-config --force
+php artisan vendor:publish --tag=dewan-multilang-slug-config --force
 ```
 
 ## Basic use
